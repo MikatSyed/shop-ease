@@ -1,37 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+SHOP EASE
 
-## Getting Started
+This is a simple e-commerce web application built with Next.js and TypeScript. It includes features such as displaying products, viewing product details, managing a cart, and interacting with a mock API to simulate e-commerce functionality.
 
-First, run the development server:
+Features
 
-```bash
-npm run dev
-# or
+Landing Page
+
+Display a list of products fetched from a mock API.
+Each product card shows the product image, name, price, and an "Add to Cart" button.
+Product Details Page
+
+Clicking on a product navigates to a dynamic route (/product/[id]).
+Displays product details, including image, name, description, price, and a related products section.
+Cart Functionality
+
+View all products added to the cart.
+Show the total price of the cart.
+Remove items from the cart.
+API Integration
+
+Fetch product data from a mock API (e.g., Faker.js or JSON Placeholder).
+Implement API routes for fetching products and managing cart items.
+Performance
+
+Use Server-Side Rendering (SSR) for the landing page.
+Use Static Site Generation (SSG) for product details pages.
+Responsive Design
+
+The application is fully responsive and works on both desktop and mobile devices.
+Code Quality
+
+Written in TypeScript following clean coding practices.
+Includes comments and clear code structure.
+Prerequisites
+Before you begin, ensure you have the following installed:
+
+Node.js: Download Node.js
+Yarn: Install Yarn
+Running the Application Locally
+Clone the repository to your local machine:
+
+
+Edit
+git clone https://github.com/MikatSyed/shop-ease
+cd mini-e-commerce
+Install dependencies using Yarn:
+
+
+yarn
+Run the development server:
+
+bash
+Copy
+Edit
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This will start the application at http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Folder Structure
+pages/: Contains the pages for the Next.js application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+index.tsx: Landing page displaying all products.
+product/[id].tsx: Product details page with dynamic routing.
+cart.tsx: Cart page displaying added products and total price.
+components/: Contains reusable components such as ProductCard, CartItem, etc.
 
-## Learn More
+lib/: API integration files for fetching data from the mock API.
 
-To learn more about Next.js, take a look at the following resources:
+styles/: Global and component-specific styles.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API Routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+/api/products: Fetches the list of products.
+/api/cart: Handles adding/removing items from the cart.
 
-## Deploy on Vercel
+Optional Enhancements
+Search/Filter: Add search or filter functionality on the landing page.
+State Management: Implement state management withZustand.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# shop-ease
