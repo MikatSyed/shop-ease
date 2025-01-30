@@ -32,16 +32,14 @@ Running the Application Locally
 
 Clone the repository to your local machine:
 
-bash
-Copy
-Edit
 git clone https://github.com/MikatSyed/shop-ease
+
 cd shop-ease
+
 Install dependencies using Yarn:
 
-
-
 yarn
+
 Run the development server:
 
 yarn dev
