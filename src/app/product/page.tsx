@@ -1,8 +1,7 @@
+import ProductList from "@/src/components/ProductList"
+import SearchAndFilter from "@/src/components/SearchAndFilter"
+import { getCategories, getProducts } from "@/src/lib/api"
 import { Suspense } from "react"
-import ProductList from "../components/ProductList"
-import SearchAndFilter from "../components/SearchAndFilter"
-import { getCategories, getProducts } from "../lib/api"
-import Navbar from "../components/Navbar"
 
 
 export default async function Home() {
@@ -11,9 +10,8 @@ export default async function Home() {
 
   return (
     <Suspense fallback={<div>Loading products...</div>}>
-      <Navbar/>
     <main className="container mx-auto px-4 py-8">
-      
+      <h1 className="text-3xl font-bold mb-8">Our Products</h1>
       <SearchAndFilter categories={categories} />
       <ProductList initialProducts={products} />
     </main>

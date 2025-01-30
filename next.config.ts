@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+
+const nextConfig: any = {
+  reactStrictMode: true,
+  experimental: {
+    appDir: true,
+    serverActions: true,
+  },
+  images: {
+    domains: ['fakestoreapi.com'],
+  },
+  
 };
 
 export default nextConfig;
