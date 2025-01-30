@@ -25,6 +25,7 @@ Performance
 
 Use Server-Side Rendering (SSR) for the landing page.
 Use Static Site Generation (SSG) for product details pages.
+
 Responsive Design
 
 The application is fully responsive and works on both desktop and mobile devices.
@@ -32,7 +33,9 @@ Code Quality
 
 Written in TypeScript following clean coding practices.
 Includes comments and clear code structure.
+
 Prerequisites
+
 Before you begin, ensure you have the following installed:
 
 Node.js: Download Node.js
@@ -44,15 +47,17 @@ Running the Application Locally
 Clone the repository to your local machine:
 
 git clone https://github.com/MikatSyed/shop-ease
+
 cd mini-e-commerce
+
 Install dependencies using Yarn:
 
-
 yarn
+
 Run the development server:
 
-
 yarn dev
+
 This will start the application at http://localhost:3000.
 
 
